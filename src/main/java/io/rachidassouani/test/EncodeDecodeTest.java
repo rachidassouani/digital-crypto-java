@@ -1,13 +1,13 @@
 package io.rachidassouani.test;
 
-import io.rachidassouani.util.CryptoUtilImpl;
+import io.rachidassouani.util.CryptoUtil;
 
-public class Test1 {
+public class EncodeDecodeTest {
 
     public static void main(String[] args) {
 
         String text = "Hello world!//+>>>";
-        CryptoUtilImpl cryptoUtil = new CryptoUtilImpl();
+        CryptoUtil cryptoUtil = new CryptoUtil();
 
         // from byte[] to base64
         String dataInBase64 = cryptoUtil.fromBytesToBase64(text.getBytes());
